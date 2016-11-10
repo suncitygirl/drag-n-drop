@@ -1,0 +1,121 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 20px;
+}
+.container {
+    position: relative;
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+}
+h1 {
+    width: 110px;
+    margin: 20px auto 0 auto;
+    color: #84596B;
+    font-weight: normal;
+}
+#tree {
+    width: 50%;
+}
+.today::after {
+    content: 'Today';
+    font-size: 12px;
+    width: 30px;
+    height: 12px;
+    position: absolute;
+    top: -9px;
+    left: -63px;
+    transform: rotate(-48deg);
+}
+#tree>li {
+    position: relative;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 5px 0;
+    color: #B58AA5;
+    list-style-image: url();
+}
+#tree>li::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -40px;
+    width: 30px;
+    height: 50px;
+    background: url('attachment.svg') no-repeat;
+}
+li {
+    color: #555555;
+    font-size: 20px;
+    list-style: none;
+    line-height: 30px;
+}
+li span {
+  padding: 4px;
+}
+#tree span:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+#tree span.hover, #tree span.hover:hover {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+span.avatar {
+    padding: 1px;
+    border: 2px solid #FFD966;
+    border-radius: 15%;
+    background: #FFD966;
+    cursor: pointer;
+    opacity: 0.6;
+    filter: progid: DXImageTransform.Microsoft.Alpha(opacity=60);
+    /* IE opacity */
+}
+label {
+    color: #701112;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.day-label::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+}
+input {
+    display: block;
+    border: none;
+    width: 56%;
+    font-size: 18px;
+    color: #555555;
+    font-family: Roboto, Arial, sans-serif;
+    padding: 5px 2%;
+    margin: 30px 20%;
+    outline: none;
+    border: solid 1px #CECFCE;
+}
+.input-container {
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    display: inline-block;
+    width: 40%;
+}
+button {
+    outline: none;
+    width: 60%;
+    margin: 0 20%;
+    background-color: #84596B;
+    color: #333333;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px 0;
+    border: none;
+}

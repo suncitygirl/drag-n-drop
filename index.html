@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dragTree.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TODO</h1>
+        <ul id="tree">
+            <li class="today"><span>Today</span>
+            </li>
+            <li><span>Tomorrow</span>
+                <ul>
+                </ul>
+            </li>
+        </ul>
+        <div class="input-container">
+            <input type="date" name="newnote" id="new-day">
+            <button type="button" name="addnote" id="add-day-btn">Добавить дату</button>
+            <input type="text" name="newnote" id="new-note">
+            <button type="button" name="addnote" id="add-note-btn">Добавить задачу</button>
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>
